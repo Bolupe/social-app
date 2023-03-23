@@ -1,38 +1,215 @@
-.App {
+/* universal styling begins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* universal styling ends */
+
+/* .App{
   text-align: center;
-}
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* navbar styling begins */
+.navbar {
   display: flex;
-  flex-direction: column;
+  height: 60px;
+  width: 100%;
+  background: #918484;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  flex-wrap: wrap;
+
+  /* justify-content: flex-end;  */
+}
+.logo {
+  color: rgb(248, 233, 233);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.navbar .links {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 5px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.links a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid rgb(228, 217, 217);
+  margin: 10px;
+  padding-bottom: 3px;
+}
+
+.links a.active,
+.links a:hover {
+  color: #b99797;
+  background: #c9c1c1;
+}
+
+.navbar .user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.user p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 10px;
+  color: #f2f2f2;
+}
+.user img {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 50%;
+}
+
+.logoutbtn {
+  margin-left: 15px;
+  cursor: pointer;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.logoutbtn:hover {
+  color: #f2f2f2;
+  background-color: #ac9e9e;
+}
+
+/* navbar styling ends */
+
+/* create post styling begins */
+input,
+textarea {
+}
+
+/* .create-post {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+} */
+
+form {
+  margin: auto;
+  padding: 30px 20px;
+  width: 30vw;
+  margin-top: 15vh;
+  padding: 20px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #918484;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+input,
+textarea {
+  padding: 8px 10px;
+  height: 55px;
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: rgb(230, 219, 204);
+  border: 0px transparent;
+  border-radius: 5px;
+  color: #413939;
+  font-size: 16px;
+  z-index: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submitform {
+  height: 30px;
+  margin: 30px 50px 30px 50px;
+  width: 70%;
+  text-align: center;
+  padding-bottom: 27px;
 }
+
+.submitform:hover {
+  background-color: #5c5454;
+  color: #a79898;
+  cursor: pointer;
+}
+/* create post styling ends */
+
+/* home page styling starts */
+.posts-page {
+  background-color: #918484;
+  border-radius: 8px;
+  width: 50vw;
+  height: 100%;
+  margin: auto;
+  margin-top: 25px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.post-title {
+  padding-bottom: 8px;
+  color: #5c5454;
+}
+.post-description {
+  padding-bottom: 6px;
+}
+.username {
+  padding-bottom: 8px;
+}
+.like-emoji {
+  margin-bottom: 8px;
+  background-color: #918484;
+  border: none;
+  cursor: pointer;
+}
+.footer {
+}
+.likes {
+}
+
+.sign-in{
+  width: 30vw;
+  height: 20vh;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 15vh;
+  padding: 20px;
+  background-color: #918484;
+}
+.sign-in-text{
+  margin-bottom: 5vh;
+}
+.sign-in-button{
+  cursor: pointer;
+  border: none;
+  padding: 7px;
+  border-radius: 3px;
+}
+.sign-in-button:hover {
+  background-color: #645f60;
+  color: #c4b5b5;
+  cursor: pointer;
+}
+/* home page styling ends */
+
+/* 
+Great work so far but I need to make it responsive, add a confirmation pop-up after a post has been made before it takes me to the home page and I'm donee! 
+Also an introduction message so a user can be guided properly
+*/

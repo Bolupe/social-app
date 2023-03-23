@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import "./App.css";
+import { Main } from "./home-page/home";
+import { Login } from "./pages/login";
+import { Navbar } from "./components/navbar";
+import { CreatePost } from "./pages/create-post/create-post";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // contains all the content of the web app, all in the router
+    // Navbar is fixed at the top, then we have different route(s), 
+    // their paths and components surrounded by the routes tag.
+
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/create-post" element={<CreatePost />} />
+      </Routes>
+    </Router>
   );
 }
 
