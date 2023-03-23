@@ -70,3 +70,12 @@ You're about to initialize a Firebase project in this directory:
 [debug] [2023-03-23T22:48:41.669Z] >>> [apiv2][query] GET https://api.github.com/repos/Bolupe/social-app/actions/secrets/public-key type=owner
 [debug] [2023-03-23T22:48:42.338Z] <<< [apiv2][status] GET https://api.github.com/repos/Bolupe/social-app/actions/secrets/public-key 401
 [debug] [2023-03-23T22:48:42.339Z] <<< [apiv2][body] GET https://api.github.com/repos/Bolupe/social-app/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-03-23T22:51:18.561Z] >>> [apiv2][query] GET https://api.github.com/repos/Bolupe/social-app /actions/secrets/public-key type=owner
+[debug] [2023-03-23T22:51:19.416Z] <<< [apiv2][status] GET https://api.github.com/repos/Bolupe/social-app /actions/secrets/public-key 401
+[debug] [2023-03-23T22:51:19.416Z] <<< [apiv2][body] GET https://api.github.com/repos/Bolupe/social-app /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-03-23T22:51:34.761Z] >>> [apiv2][query] GET https://api.github.com/repos/Bolupe/social-app /actions/secrets/public-key type=owner
+[debug] [2023-03-23T22:51:35.735Z] <<< [apiv2][status] GET https://api.github.com/repos/Bolupe/social-app /actions/secrets/public-key 401
+[debug] [2023-03-23T22:51:35.736Z] <<< [apiv2][body] GET https://api.github.com/repos/Bolupe/social-app /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-03-23T22:51:50.214Z] >>> [apiv2][query] GET https://api.github.com/repos/Bolupe/social-app/actions/secrets/public-key type=owner
+[debug] [2023-03-23T22:51:50.878Z] <<< [apiv2][status] GET https://api.github.com/repos/Bolupe/social-app/actions/secrets/public-key 401
+[debug] [2023-03-23T22:51:50.879Z] <<< [apiv2][body] GET https://api.github.com/repos/Bolupe/social-app/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
